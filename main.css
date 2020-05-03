@@ -10,8 +10,9 @@
 body{
     z-index: 1;/*Z-index help (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)*/
     /*Got help with the thickness and elevation of items https://material.io/design/environment/elevation.html#elevation-in-material-design*/
-
+    
 }
+
 h1 h2{
     color: #212121; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
 }
@@ -29,7 +30,7 @@ p{
     display: grid; /*Help understanding display (https://developer.mozilla.org/en-US/docs/Web/CSS/display)*/
     grid-gap: 1rem; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
     grid-auto-columns: auto auto auto ; /*help with grid-auto-columns (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns)*/
-    grid-template-rows: auto auto auto auto auto auto auto; /*Help with auto in grids (https://stackoverflow.com/questions/41916722/how-do-i-specify-row-heights-in-css-grid-layout)*/
+    grid-template-rows: auto auto auto auto auto auto auto auto; /*Help with auto in grids (https://stackoverflow.com/questions/41916722/how-do-i-specify-row-heights-in-css-grid-layout)*/
 }
  .header{/*Learnt from (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)*/
     background-color: #009688; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
@@ -66,26 +67,30 @@ a{
 }
 .lpc-1{/*Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) grid based on (https://codepen.io/lizcoultersmith/pen/ZEEPGbr)*/
     grid-column: 2 / 3; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
+    grid-row: 3/4;
     margin: auto; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
     margin-top: 20px;
     margin-bottom: 15px; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
 }
 .lpc-2{
     grid-column: 2 / 3;
+    grid-row: 4/5;
     margin: auto;
     border-radius: 50px; 
     margin-top: 15px;
 }
 .lpc-3{
     grid-column: 2 / 3;
+    grid-row: 5/6;
     margin: auto;
-    color: #212121; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
-    margin-top: 50px; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
+    
+    margin-top: 0px; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
     margin-bottom: 50px;
+    
 }
 .footer{/*learnt from (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)*/
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 7 / 8; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 8 / 9; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     background-color: #00796B; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     border-radius: 10px;
     z-index: 4;/*Z-index help (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)*/
@@ -107,13 +112,14 @@ li img{
 }
 .portplace{
     grid-column: 2 / 3; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 2 / 3; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 3 / 4; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
 }
 .portplace2{
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 2 / 3 ;
 }
 .portgrid{
+    grid-row: 5/6;
     display: grid; /*Help understanding display (https://developer.mozilla.org/en-US/docs/Web/CSS/display)*/
     grid-auto-columns: 1fr 1fr ; /*Help using fr (https://developer.mozilla.org/en-US/docs/Glossary/Grid)*/
     grid-template-rows: 1fr 1fr;
@@ -148,7 +154,7 @@ a img{
 }
 .cvskill{
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 2 / 3; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 3 / 4; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     border-radius: 10px; /*help with border radius (https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)*/
     box-shadow: 0px 1px 10px black;
     margin: 10px;
@@ -169,7 +175,7 @@ a img{
 }
 .cvwe{
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 3 / 4; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 4 / 5; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 1px 10px black;
@@ -190,7 +196,7 @@ a img{
 }
 .cved{
     grid-column: 1 / 4;
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     margin: 10px;
     border-radius: 10px; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
     box-shadow: 0px 1px 10px black;
@@ -200,7 +206,7 @@ a img{
     transition: 0.4s;
 }
 .cvcon{
-    grid-row: 6 / 7; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 7 / 8; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
     border-radius: 10px;
     box-shadow: 0px 1px 10px black;
@@ -211,6 +217,7 @@ a img{
     transition: 0.4s; /*Help understanding transition (https://developer.mozilla.org/en-US/docs/Web/CSS/transition)*/
 }
 .adjust{
+    grid-row: 5 / 6;
     display: grid; /*Help understanding display (https://developer.mozilla.org/en-US/docs/Web/CSS/display)*/
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -219,6 +226,7 @@ a img{
 }
 form {
     grid-column: 2 / 3;
+    grid-row: 3/4;
 }
 .formgrid{
     display: grid; /*Help understanding display (https://developer.mozilla.org/en-US/docs/Web/CSS/display)*/
@@ -229,10 +237,12 @@ form {
     box-shadow: 0px 1px 10px black; /*Learnt from (https://codepen.io/lizcoultersmith/pen/ZEEPGbr) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow#offset-x) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)*/
     border-radius: 10px;
     margin-top: 70px;
+    
 }
 .formcards:hover{
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.616);
     transition: 0.4s;
+    
 }
 .inputtitle{
     box-shadow: 0px 1px 10px black; /*Learnt from (https://codepen.io/lizcoultersmith/pen/ZEEPGbr) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow#offset-x) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)*/
@@ -250,3 +260,51 @@ input{
     background-color: #B2DFDB; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     transition: 0.4s; /*Help understanding transition (https://developer.mozilla.org/en-US/docs/Web/CSS/transition)*/
 }
+
+#text
+{
+    display: none;
+    z-index:3;
+    margin: 0px;
+    
+}
+
+#nowshows {
+    display: none;
+}
+
+
+.but{
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #009688;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    z-index: 1;
+    box-shadow: 0px 1px 2px black;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 23px;
+}
+.but:hover{
+    background-color: #00796B;
+}
+.changeb{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-left: 50px;
+}
+.l{
+    
+    background-color: #FFFFFF;    
+    color: #212121;
+    
+}
+.d{
+    background-color: #00796b;
+    color: #FFFFFF;
+}
+ 

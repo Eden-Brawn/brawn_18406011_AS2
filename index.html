@@ -13,26 +13,38 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"><!--fonts from (https://fonts.google.com/?selection.family=Open+Sans|PT+Sans|Poppins&query=p) site from liz coulter-smith (https://docs.google.com/presentation/d/1Xr-TuZ2ZqI4ODHljjOD3c3vrxzTGfCZfbAiuL1qKOFQ/edit#slide=id.g640c662512_0_73)-->
     <link rel="stylesheet" href="main.css"> <!--(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)-->
     <title>Document</title>
+    
 </head>
-<body class="center"><!--Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) from (https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) -->
+<body><!--Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) from (https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) -->
     <div class="gridstyle"> <!--This is help with css grid (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) and (https://mozilladevelopers.github.io/playground/css-grid/02-first-grid/) and (https://codepen.io/lizcoultersmith/pen/ZEEPGbr?editors=1100) and (https://gridbyexample.com/learn/)-->
         <header class="header"> <!--Header (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)-->
+            
             <ul class="navgrid">
                 <li class="navhov"><a href="https://eden-brawn.github.io/brawn_18406011_AS1/">Home</a></li><!--List help (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)-->
                 <li class="navhov"><a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a></li>
                 <li class="navhov"><a href="http://127.0.0.1:5500/cv.html">CV</a></li>
                 <li class="navhov"><a href="http://127.0.0.1:5500/contact.html">Contacts</a></li>
             </ul>
+            
         </header>
+        
+            
+        <button type="button"  onclick="change()" class="but">Light/Dark</button>
+          
         <h1 class="lpc-1">My Name is Eden Brawn</h1><!--Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) from (https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) -->
-        <img class="lpc-2" src="assets/20200109_111813(2).jpg" alt="A picture of me">
-        <div class="lpc-3">
-        <h2 >Welcom to my site, <br>Currently I am Studiying at Northampton University <br> <!--br learnt from (https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/pc/challenge-you-can-learn-text-tags)-->
+        
+        <img class="lpc-2" id ="me" src="assets/20200109_111813(2).jpg" onmouseover="differentpic()" onmouseout="normalPic()" alt="A picture of me">
+        
+            
+        
+        <div class="lpc-3">  
+        <h2 ><div id = "text">This is me: </div><br>Currently I am Studying at Northampton University <br> <!--br learnt from (https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/pc/challenge-you-can-learn-text-tags)-->
         I am studying Business Computing (Web Design)</h2> <p>This site contains information about me currently and what I have done in the past, <br>
         you can check out my Github and Facebook below.</p>
         </div>
+        
         <footer class="footer"> <!--Help with footer (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)-->
-            <a href="https://github.com/Eden-Brawn?tab=repositories" class="footimg"><i class="fab fa-github-square"></i></a><!--The source for git logo (https://fontawesome.com/icons/github-square?style=brands)-->
+            <a  href="https://github.com/Eden-Brawn?tab=repositories" class="footimg"><i class="fab fa-github-square"></i></a><!--The source for git logo (https://fontawesome.com/icons/github-square?style=brands)-->
             <a href="https://en-gb.facebook.com/" class="footimg"><i class="fab fa-facebook-square"></i></a><!--The source for fb logo (https://fontawesome.com/icons/facebook-square?style=brands)-->
         </footer>
         
