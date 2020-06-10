@@ -69,14 +69,15 @@ a{
     grid-column: 2 / 3; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
     grid-row: 3/4;
     margin: auto; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
-    margin-top: 20px;
-    margin-bottom: 15px; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
+    
+    
 }
+
 .lpc-2{
     grid-column: 2 / 3;
     grid-row: 4/5;
     margin: auto;
-    border-radius: 50px; 
+    border-radius: 50px;  /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
     margin-top: 15px;
 }
 .lpc-3{
