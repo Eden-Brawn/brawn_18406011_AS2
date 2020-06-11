@@ -309,3 +309,23 @@ input{
     color: #FFFFFF;
 }
  
+.gittag{
+    display: none;
+    background-color: #009688;
+    border: solid;
+    border-color: #FFFFFF;
+    border-width: 0.2px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    border-radius: 8px;
+    margin: auto;
+    padding: 5px;
+    grid-row: 7/8;
+    grid-column: 2/3;
+    width: fit-content;
+}
+
+footer p1{
+    background-color: none;
+}

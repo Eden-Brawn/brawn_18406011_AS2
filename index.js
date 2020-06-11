@@ -10,6 +10,7 @@ function textAppear() {
     document.getElementById("text").setAttribute("style", "display:block");
 };
 setTimeout(textAppear, 3000); /*Help with tiemout (https://javascript.info/settimeout-setinterval)*/ 
+
 function setTheme(background) { /*Help with light dark button (https://zocada.com/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript/)*/
     localStorage.setItem('colour', background);
     document.documentElement.className = background;
@@ -31,7 +32,14 @@ function change() {
     }
  })();
 
+ function git(){
+    let popup  = document.getElementById("gitTag").setAttribute("style", "display:block");
+ };
+ function noGit(){
+    document.getElementById("gitTag").setAttribute("style", "display:none");
+ };
 
+ 
  
 
 
