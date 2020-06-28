@@ -34,8 +34,9 @@ p{
 }
  .header{/*Learnt from (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)*/
     background-color: #009688; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
-    height: 200px;
+    height: 230px;
     margin: 0;
+    padding-top: 20px;
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
     z-index: 5; /*Z-index help (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)*/
     box-shadow: 0px 1px 10px black;/*Learnt from (https://codepen.io/lizcoultersmith/pen/ZEEPGbr) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow#offset-x) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)*/
@@ -43,6 +44,18 @@ p{
     position: sticky; top: -25px;
     border-radius: 10px; /*Learnt from liz coulter-smith (https://codepen.io/lizcoultersmith/pen/KKKEpNy)*/
     font-family: 'Poppins', sans-serif;  /*fonts from (https://fonts.google.com/?selection.family=Open+Sans|PT+Sans|Poppins&query=p) site from liz coulter-smith (https://docs.google.com/presentation/d/1Xr-TuZ2ZqI4ODHljjOD3c3vrxzTGfCZfbAiuL1qKOFQ/edit#slide=id.g640c662512_0_73)*/
+    
+}
+.fas fa-bars {
+    text-align: center;
+}
+.popout{
+    grid-column: 1 / 4;
+    z-index: 5; 
+    position: -webkit-sticky; /*Help with position (https://developer.mozilla.org/en-US/docs/Web/CSS/position)*/
+    position: sticky; top: -25px;
+    display: none;
+    
 }
 ul{/*Nav bar based on Liz Coulter-Smith from (https://codepen.io/lizcoultersmith/pen/mddoJPJ) and (https://docs.google.com/presentation/d/1VuZDYziJ6aiufrsBig6_KorJ-YRoFfu4S7ZLd0o3wCA/edit#slide=id.g707a7b8ff0_0_4)*/
     margin: 10px auto 10px auto; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
@@ -65,9 +78,15 @@ a{
     border-radius: 10px; /*Hepl with borders (https://developer.mozilla.org/en-US/docs/Web/CSS/border)*/
     transition: 0.4s; /*Help understanding transition (https://developer.mozilla.org/en-US/docs/Web/CSS/transition)*/
 }
+.ham i{
+    color: #FFFFFF;
+    height: auto;
+    width: 50px;
+
+}
 .lpc-1{/*Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) grid based on (https://codepen.io/lizcoultersmith/pen/ZEEPGbr)*/
     grid-column: 2 / 3; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 3/4;
+    grid-row: 4/5;
     margin: auto; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
     
     
@@ -75,14 +94,14 @@ a{
 
 .lpc-2{
     grid-column: 2 / 3;
-    grid-row: 4/5;
+    grid-row: 5/6;
     margin: auto;
     border-radius: 50px;  /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
     margin-top: 15px;
 }
 .lpc-3{
     grid-column: 2 / 3;
-    grid-row: 5/6;
+    grid-row: 6/7;
     margin: auto;
     
     margin-top: 0px; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
@@ -107,10 +126,11 @@ li img{
     width: 50px;
 }
 .footimg:hover{
-    background-color: #009688; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
+     /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     border-radius: 10px; /*help with border radius (https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)*/
     transition: 0.4s;
 }
+
 .portplace{
     grid-column: 2 / 3; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
     grid-row: 3 / 4; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
@@ -274,10 +294,13 @@ input{
     display: none;
 }
 
+.disbut{
+    color: white;
+}
 
 .but{
     display: grid;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 2 / 3;
     background-color: #009688;
     color: #FFFFFF;
@@ -324,8 +347,38 @@ input{
     grid-row: 7/8;
     grid-column: 2/3;
     width: fit-content;
+    opacity: 1.9;
 }
 
 footer p1{
     background-color: none;
+}
+
+#hide {
+    display: none;
+}
+#show{
+    display: block;
+}
+
+
+#toggle{
+    background-color: #009688; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
+    height: 50px;
+    margin: 0;
+    padding-top: 20px;
+    position: -webkit-sticky; /*Help with position (https://developer.mozilla.org/en-US/docs/Web/CSS/position)*/
+    position: sticky; top: -25px;
+    grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
+    z-index: 2; /*Z-index help (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)*/
+    box-shadow: 0px 1px 10px black;/*Learnt from (https://codepen.io/lizcoultersmith/pen/ZEEPGbr) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow#offset-x) and (https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)*/
+    z-index: 5; 
+    border-radius: 10px; /*Learnt from liz coulter-smith (https://codepen.io/lizcoultersmith/pen/KKKEpNy)*/
+    font-family: 'Poppins', sans-serif; 
+}
+
+.space{
+    padding: 20px;
+    grid-row: 7/8;
+    grid-column: 2/3;
 }
