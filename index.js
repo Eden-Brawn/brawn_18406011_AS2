@@ -45,7 +45,25 @@ function change() {
     document.getElementById("gitTag").setAttribute("style", "display:none");
  };
 
+ function face(){
+    let popup  = document.getElementById("faceTag").setAttribute("style", "display:block");
+ };
+ function noFace(){
+    document.getElementById("faceTag").setAttribute("style", "display:none");
+ };
 
+ function link(){
+    let popup  = document.getElementById("linkTag").setAttribute("style", "display:block");
+ };
+ function noLink(){
+    document.getElementById("linkTag").setAttribute("style", "display:none");
+ };
+ function stack(){
+    let popup  = document.getElementById("stackTag").setAttribute("style", "display:block");
+ };
+ function noStack(){
+    document.getElementById("stackTag").setAttribute("style", "display:none");
+ };
 
  let menuDisplay = false; /*Help with hamburger (https://www.youtube.com/watch?v=urol_SD1wz4)*/ 
  function menuChange(){

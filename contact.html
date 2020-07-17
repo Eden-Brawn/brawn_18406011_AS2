@@ -18,14 +18,16 @@
 </head>
 <body class="center"><!--Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) from (https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) -->
     <div class="gridstyle"><!--This is help with css grid (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) and (https://mozilladevelopers.github.io/playground/css-grid/02-first-grid/) and (https://codepen.io/lizcoultersmith/pen/ZEEPGbr?editors=1100) and (https://gridbyexample.com/learn/)-->
-        <header class="header"><!--Header (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)-->
-            <ul class="navgrid">
-                <li class="navhov"><a href="http://127.0.0.1:5500/index.html">Home</a></li><!--List help (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)-->
-                <li class="navhov"><a href="http://127.0.0.1:5500/portfolio.html#">Portfolio</a></li>
-                <li class="navhov"><a href="http://127.0.0.1:5500/cv.html#">CV</a></li>
-                <li class="navhov"><a href="http://127.0.0.1:5500/contact.html">Contacts</a></li>
-            </ul>
-        </header>
+        <div class="ham" id="toggle" onclick="menuChange()"><i id="togpic"class="fas fa-bars fa-2x"></i></div><!--The source for hamburger icon (https://fontawesome.com/icons/bars?style=solid)-->
+       <span id="popout" class="popout">
+            <header class="header"> <!--Header (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)-->
+                <ul class="navgrid">
+                    <li class="navhov"><a href="http://127.0.0.1:5500/index.html">Home</a></li><!--List help (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)-->
+                    <li class="navhov"><a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a></li>
+                    <li class="navhov"><a href="http://127.0.0.1:5500/cv.html">CV</a></li>
+                    <li class="navhov"><a href="http://127.0.0.1:5500/contact.html">Contacts</a></li>                </ul>
+            </header>
+        </span>
         <button type="button"  onclick="change()" class="but">Light/Dark</button>
         <form action="mailto:edenbrawn@gmail.com" class="formgrid"><!--Help with form and input ((https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms) and (https://stackoverflow.com/questions/7449767/how-do-i-send-an-html-form-in-an-email-not-just-mailto))-->
             <div class="formcards"><!--Learnt classes from Liz Coulter-smith (https://docs.google.com/presentation/d/1Yf4kfHwaz07Vnioszt6HVfdYPBxkmlriHVidD7TPNuA/edit#slide=id.g62edc68dcc_1_295) from (https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) -->
@@ -41,13 +43,21 @@
                 <p>ebrawn.com</p>
             </div>
             <div class="inputtitle"> <h2>Click the button below</h2><p>To open your email client with my email address</p></div>
-            <input type="submit" value="Send an Email" class="input"> <!--Help with input and form (https://stackoverflow.com/questions/7449767/how-do-i-send-an-html-form-in-an-email-not-just-mailto) and (https://stackoverflow.com/questions/24026898/how-to-send-an-email-using-only-html5-and-css)-->
+            
         </form>
+        <input type="submit" value="Send an Email" class="input"> <!--Help with input and form (https://stackoverflow.com/questions/7449767/how-do-i-send-an-html-form-in-an-email-not-just-mailto) and (https://stackoverflow.com/questions/24026898/how-to-send-an-email-using-only-html5-and-css)-->
+
+        <div class="space"> </div>
+        <p1 class="tag" id="gitTag" >Github</p1>
+        <p1 class="tag" id="faceTag" >Facebook</p1>
+        <p1 class="tag" id="linkTag" >Linkedin</p1>
+        <p1 class="tag" id="stackTag" >Stackoverflow</p1>
         <footer class="footer"> <!--Help with footer (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)-->
+           
             <a onmouseover="git()" onmouseout="noGit()"  href="https://github.com/Eden-Brawn?tab=repositories" class="footimg"><i class="fab fa-github-square"></i></a><!--The source for git logo (https://fontawesome.com/icons/github-square?style=brands)-->
-            <a href="https://en-gb.facebook.com/" class="footimg"><i class="fab fa-facebook-square"></i></a><!--The source for fb logo (https://fontawesome.com/icons/facebook-square?style=brands)-->
-            <a href="https://www.linkedin.com/feed/" class="footimg"><i class="fab fa-linkedin"></i></a><!--The source for linkenin logo (https://fontawesome.com/icons/linkedin?style=brands)-->
-            <a href="https://stackoverflow.com/" class="footimg"><i class="fab fa-stack-overflow"></i></a><!--The source for stackoverflowlogo (https://fontawesome.com/icons/stack-overflow?style=brands)-->
+            <a onmouseover="face()" onmouseout="noFace()" href="https://en-gb.facebook.com/" class="footimg"><i class="fab fa-facebook-square"></i></a><!--The source for fb logo (https://fontawesome.com/icons/facebook-square?style=brands)-->
+            <a onmouseover="link()" onmouseout="noLink()" href="https://www.linkedin.com/feed/" class="footimg"><i class="fab fa-linkedin"></i></a><!--The source for linkenin logo (https://fontawesome.com/icons/linkedin?style=brands)-->
+            <a onmouseover="stack()" onmouseout="noStack()" href="https://stackoverflow.com/" class="footimg"><i class="fab fa-stack-overflow"></i></a><!--The source for stackoverflowlogo (https://fontawesome.com/icons/stack-overflow?style=brands)-->
         </footer>
         
     </div>

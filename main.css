@@ -30,7 +30,7 @@ p{
     display: grid; /*Help understanding display (https://developer.mozilla.org/en-US/docs/Web/CSS/display)*/
     grid-gap: 1rem; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
     grid-auto-columns: auto auto auto ; /*help with grid-auto-columns (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns)*/
-    grid-template-rows: auto auto auto auto auto auto auto auto; /*Help with auto in grids (https://stackoverflow.com/questions/41916722/how-do-i-specify-row-heights-in-css-grid-layout)*/
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto; /*Help with auto in grids (https://stackoverflow.com/questions/41916722/how-do-i-specify-row-heights-in-css-grid-layout)*/
 }
  .header{/*Learnt from (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)*/
     background-color: #009688; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
@@ -105,12 +105,12 @@ a{
     margin: auto;
     
     margin-top: 0px; /*Learnt margin values from (https://developer.mozilla.org/en-US/docs/Web/CSS/margin)*/
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     
 }
 .footer{/*learnt from (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)*/
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 8 / 9; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 10 / 11; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     background-color: #00796B; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     border-radius: 10px;
     z-index: 4;/*Z-index help (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)*/
@@ -133,10 +133,11 @@ li img{
 
 .portplace{
     grid-column: 2 / 3; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 3 / 4; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 4 / 5; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+
 }
 .portplace2{
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     grid-column: 2 / 3 ;
 }
 .portgrid{
@@ -175,7 +176,7 @@ a img{
 }
 .cvskill{
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 3 / 4; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 4 / 5; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     border-radius: 10px; /*help with border radius (https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)*/
     box-shadow: 0px 1px 10px black;
     margin: 10px;
@@ -196,7 +197,7 @@ a img{
 }
 .cvwe{
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
-    grid-row: 4 / 5; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 5 / 6; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 1px 10px black;
@@ -217,7 +218,7 @@ a img{
 }
 .cved{
     grid-column: 1 / 4;
-    grid-row: 6 / 7;
+    grid-row: 7 / 8;
     margin: 10px;
     border-radius: 10px; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
     box-shadow: 0px 1px 10px black;
@@ -227,7 +228,7 @@ a img{
     transition: 0.4s;
 }
 .cvcon{
-    grid-row: 7 / 8; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
+    grid-row: 8 / 9; /*Help with grid-row (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)*/
     grid-column: 1 / 4; /*Help with grid-column (https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)*/
     border-radius: 10px;
     box-shadow: 0px 1px 10px black;
@@ -238,7 +239,7 @@ a img{
     transition: 0.4s; /*Help understanding transition (https://developer.mozilla.org/en-US/docs/Web/CSS/transition)*/
 }
 .adjust{
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     display: grid; /*Help understanding display (https://developer.mozilla.org/en-US/docs/Web/CSS/display)*/
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -275,7 +276,8 @@ input{
     border-radius: 10px;
     background-color: #4CAF50; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     border: #4CAF50;
-    margin-top: 70px;
+    grid-row: 7/8;
+    grid-column: 2/3;
 }
 .input:hover{
     background-color: #B2DFDB; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
@@ -309,6 +311,7 @@ input{
     z-index: 1;
     box-shadow: 0px 1px 2px black;
     margin: 0;
+    margin-left: 58px;
     padding: 0;
     width: 70px;
     height: 23px;
@@ -317,9 +320,9 @@ input{
     background-color: #00796B;
 }
 .changeb{
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 1 / 2;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .l{
     
@@ -332,7 +335,7 @@ input{
     color: #FFFFFF;
 }
  
-.gittag{
+.tag{
     display: none;
     background-color: #009688;
     border: solid;
@@ -344,7 +347,7 @@ input{
     border-radius: 8px;
     margin: auto;
     padding: 5px;
-    grid-row: 7/8;
+    grid-row: 9/10;
     grid-column: 2/3;
     width: fit-content;
     opacity: 1.9;
@@ -379,6 +382,7 @@ footer p1{
 
 .space{
     padding: 20px;
-    grid-row: 7/8;
+    grid-row: 9/10;
     grid-column: 2/3;
 }
+
