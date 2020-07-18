@@ -163,7 +163,7 @@ li img{
 a img{
     margin: 5px;
 }
-@media (min-width: 600px) /*Media query help (https://developer.mozilla.org/en-US/docs/Web/CSS/@media) and (https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping/27853917)*/
+@media (min-width: 1010px) /*Media query help (https://developer.mozilla.org/en-US/docs/Web/CSS/@media) and (https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping/27853917)*/
 {
     .one{
         display: none;
