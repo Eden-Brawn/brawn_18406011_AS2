@@ -386,3 +386,17 @@ footer p1{
     grid-column: 2/3;
 }
 
+
+
+
+.leave {
+    opacity: 0;
+    transition: 0.2s;
+  }
+  
+  .comeback  {
+    opacity: 100;
+    transition: 0.2s;
+  }
+  
+ 

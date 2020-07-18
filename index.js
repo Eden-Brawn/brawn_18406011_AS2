@@ -69,18 +69,35 @@ function change() {
  function menuChange(){
      let theButton = document.getElementById("toggle");
      let theMenu = document.querySelector(".popout");
+
      if (menuDisplay === false) {
         theMenu.style.display = "block"; /*Help with innerHTML (https://stackoverflow.com/questions/45378428/how-to-dynamically-add-a-font-awesome-icon-with-javascript) and (https://www.quora.com/What-is-the-definition-of-innerHTML#:~:text=innerHTML%20is%20a%20DOM%20property,in%20Javascript%20to%20manipulate%20DOM.)*/
         theButton.innerHTML = '<i class="fas fa-times fa-2x"></i>';/*The source for cross icon (https://fontawesome.com/icons/times?style=solid)*/
         menuDisplay = true;
+        
      }
      else if (menuDisplay === true)  {
         theMenu.style.display = "none";
         theButton.innerHTML = '<i id="togpic"class="fas fa-bars fa-2x"></i>';
         menuDisplay = false;
+        
      }
  }
 
- 
-
-
+ /*I used this to help me make the hamburger leave when scrolling (https://webdesign.tutsplus.com/tutorials/how-to-hide-reveal-a-sticky-header-on-scroll-with-javascript--cms-33756)*/ 
+ /*Also this (https://stackoverflow.com/questions/57235230/want-to-hide-show-navbar-when-scroll-down-up-using-js-or-jquery) */
+      const ham = document.querySelector(".ham");
+     const cb = "comeback";
+     const l = "leave";
+     
+      window.addEventListener('scroll', () => {
+     if (menuDisplay === true && window.scrollY > 50){
+         ham.classList.add(l);
+         ham.classList.remove(cb);
+     }
+     else{
+        ham.classList.add(cb);
+        ham.classList.remove(l);
+     }
+   });
+     
