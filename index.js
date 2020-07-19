@@ -1,15 +1,15 @@
 function differentpic() { /* Help with switching picture (https://stackoverflow.com/questions/29980711/javascript-hover-text-over-image)*/
    document.getElementById("me") .src = "assets/unnamed2.jpg";
    
- };
+ }
  function normalPic() {
    document.getElementById("me") .src = "assets/20200109_111813(2).jpg";
- };
+ }
 
 
 function textAppear() {
    document.getElementById("text").setAttribute("style", "display:block");
-};
+}
 setTimeout(textAppear, 3000); /*Help with tiemout (https://javascript.info/settimeout-setinterval)*/ 
 
 
@@ -26,7 +26,7 @@ function change() {
    } else {
        setTheme('d');
    }
-};
+}
 (function () {
    if (localStorage.getItem('colour') === 'd') {
       setTheme('d');
@@ -39,30 +39,30 @@ function change() {
 
 function git(){
    let popup  = document.getElementById("gitTag").setAttribute("style", "display:block");
-};
+}
 function noGit(){
    document.getElementById("gitTag").setAttribute("style", "display:none");
-};
+}
 
 function face(){
    let popup  = document.getElementById("faceTag").setAttribute("style", "display:block");
-};
+}
 function noFace(){
    document.getElementById("faceTag").setAttribute("style", "display:none");
-};
+}
 
 function link(){
    let popup  = document.getElementById("linkTag").setAttribute("style", "display:block");
-};
+}
 function noLink(){
    document.getElementById("linkTag").setAttribute("style", "display:none");
-};
+}
 function stack(){
    let popup  = document.getElementById("stackTag").setAttribute("style", "display:block");
-};
+}
 function noStack(){
    document.getElementById("stackTag").setAttribute("style", "display:none");
-};
+}
 
 let menuDisplay = false; /*Help with hamburger (https://www.youtube.com/watch?v=urol_SD1wz4)*/ 
 function menuChange(){
