@@ -1,3 +1,4 @@
+/*Some inspiration from (https://codepen.io/amaury-diallo/pen/rbKEoB) */
 function differentpic() { /* Help with switching picture (https://stackoverflow.com/questions/29980711/javascript-hover-text-over-image)*/
    document.getElementById("me") .src = "assets/unnamed2.jpg";
    
