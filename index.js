@@ -99,3 +99,17 @@ function menuChange(){
        ham.classList.remove(l);
     }
   });
+
+
+/*How to monitor button presses(https://stackoverflow.com/questions/2788191/how-to-check-whether-a-button-is-clicked-by-using-javascript) */
+  document.getElementById('input').onclick = function() {
+     
+     if (confirm('Do you want to open your email account?')){
+           window.open('mailto:edenbrawn@gmail.com?subject=About your website.....&body=Dear Eden Brawn');
+
+     }
+     else{/*Help with confirm (https://stackoverflow.com/questions/9334636/how-to-create-a-dialog-with-yes-and-no-options) */
+
+     }
+     
+};/*How to use mailto (https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript) */
