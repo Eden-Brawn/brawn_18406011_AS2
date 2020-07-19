@@ -322,7 +322,7 @@ input{
 .changeb{
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    margin-left: 20px;
+    
 }
 .l{
     
@@ -399,4 +399,4 @@ footer p1{
     transition: 0.2s;
   }
   
- 
+
