@@ -114,9 +114,10 @@ a{
     background-color: #00796B; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     border-radius: 10px;
     z-index: 4;/*Z-index help (https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)*/
+    box-shadow: 0px 1px 10px black;
     position: -webkit-sticky;/*Help with position (https://developer.mozilla.org/en-US/docs/Web/CSS/position)*/
     position: sticky; bottom: -55px;
-    box-shadow: 0px 1px 10px black;
+
     height: auto;
     color: #FFFFFF; /*Colours decided from(https://www.materialpalette.com/teal/green)*/
     font-size: 4em; /*understanding units in css (https://www.w3.org/Style/Examples/007/units.en.html)*/
