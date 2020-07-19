@@ -62,6 +62,9 @@ Inspiration
 
 ![image](https://user-images.githubusercontent.com/56394992/87869647-4d2a0480-c999-11ea-9f59-c3093869d737.png)
 
+https://material.io/design/environment/light-shadows.html#shadows
+https://medium.muz.li/youtube-material-design-redesign-e684cc2d221b 
+https://codepen.io/amaury-diallo/pen/rbKEoB
 
 Version control
 
