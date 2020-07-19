@@ -293,9 +293,6 @@ input{
     
 }
 
-#nowshows {
-    display: none;
-}
 
 .disbut{
     color: white;
@@ -354,14 +351,6 @@ input{
     opacity: 1.9;
 }
 
-
-
-#hide {
-    display: none;
-}
-#show{
-    display: block;
-}
 
 
 #toggle{
